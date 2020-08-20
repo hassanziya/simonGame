@@ -1,6 +1,7 @@
 gameStart();
 function gameStart() {
   $("body").on("keypress", function (event) {
+    $(this).unbind(event);
     $(".title").text("Game Starting in 3Sec");
     setTimeout(function () {
       $(".title").text("Level 1");
